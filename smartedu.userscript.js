@@ -49,8 +49,8 @@
     const playbackRateText = playbackRateElement.querySelector('.vjs-playback-rate-value')
     if (!playbackRateText || playbackRateText.innerText === '2x') return
 
-    const firstLi = playbackRateElement.querySelector('.vjs-menu-item')
-    if (firstLi) firstLi.click()
+    const playRateMenu = playbackRateElement.querySelectorAll('.vjs-menu-item')
+    if (playRateMenu[2]) playRateMenu[2].click()
 
     const video = document.querySelector('video')
     if (!video) return
