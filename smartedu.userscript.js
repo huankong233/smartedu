@@ -39,7 +39,9 @@
   resourceElements[index].click()
 
   setInterval(() => {
-    document.querySelectorAll('.fish-modal-confirm-btns').forEach((button) => button.click())
+    document
+      .querySelectorAll('.fish-modal-confirm-btns')
+      .forEach((button) => button.querySelector('button')?.click())
 
     const playbackRateElement = document.querySelector('.vjs-playback-rate')
     if (!playbackRateElement) return
